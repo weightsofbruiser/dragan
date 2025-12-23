@@ -1,0 +1,231 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>DRAGAN LAD // DRAGON FORM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./dragan.css?v=1">
+</head><body>
+
+<div class="wrap">
+  <div class="board" id="board">
+    <div class="rgbSplit" aria-hidden="true"></div>
+    <canvas class="embers" id="embers"></canvas>
+
+    <div class="freeImg" style="--x:305px;--y:-115px;--w:200px;--h:800px;--rot:0deg;--opa:.75;--z:5;--blur:0px;--fit:contain">
+      <img src="https://pomf2.lain.la/f/3jcsggve.png" alt="">
+    </div>
+    <div class="freeImg2" style="--x:390px;--y:280px;--w:240px;--h:500px;--rot:0deg;--opa:.78;--z:8;--blur:0px;--fit:contain">
+      <img src="https://pomf2.lain.la/f/d1drjm53.png" alt="">
+    </div>
+
+    <div class="grid">
+      <aside class="left">
+        <div class="nameBanner">
+          <div class="nameRow">
+            <div class="name">DRAGAN LAD</div>
+            <div class="fileCode">DRAGON</div>
+          </div>
+          <div class="subline">
+            <span>ALT FORM / PEAK STATE</span>
+            <span>STATUS <b>UNLOCKED</b></span>
+          </div>
+        </div>
+
+        <div class="chipsBox">
+          <div class="file">
+            <div class="tag"><i>●</i>LINK <b>ON</b></div>
+            <div class="tag"><i>▲</i> <b>ACTIVE</b></div>
+            <div class="tag"><i>■</i>SYNC <b id="sync">97%</b></div>
+          </div>
+        </div>
+
+        <div class="pframe">
+          <div class="portrait">
+            <img src="https://pomf2.lain.la/f/bktq4un1.png" alt="portrait"/>
+            <div class="scan"></div>
+            <div class="pulseTat"></div>
+            <div class="shockwave"></div>
+          </div>
+        </div>
+
+        <div class="dnaStrip">
+          <div class="k">DNA STRIP</div>
+          <div class="dnaHelix"><canvas class="dnaCanvas" id="dnaCanvas"></canvas></div>
+          <div class="dnaSeqLine" id="dnaSeqLine" aria-hidden="true"></div>
+          <div class="dnaRead">
+            <span>SEQ <b>VX-UMB</b></span>
+            <span>MUTATION <b>99%</b></span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="right">
+        <div class="top">
+          <div class="title"><span class="dot"></span> DRAGON VECTOR / OVERDRIVE CONSOLE</div>
+          <div class="clock" id="clock">--:--</div>
+        </div>
+
+        <div class="ticker">
+          <span id="tickerSpan">
+            DRAGON STATE: ONLINE<br>
+            TATTOO LUMINANCE: PURPLE TINT<br>
+            OCULAR SHIFT: WHITE / VIOLET HAZE<br>
+            VOICE: DISTORTED // FILTERED
+          </span>
+        </div>
+
+        <section class="panel coreVec corrupt" id="corePanel">
+          <div class="slice" aria-hidden="true"></div>
+          <div class="phead">
+            <h2>Core Vector</h2>
+            <div class="sub" id="subHdr">LIVE STATS - DRAGON STATE</div>
+          </div>
+
+          <div class="pbody">
+            <div class="coreGrid">
+              <svg class="flowSvg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M92 18 C78 18,60 28,44 36 C34 41,26 46,18 50"/>
+                <path class="p2" d="M92 38 C76 38,58 44,44 50 C34 55,26 58,18 60"/>
+                <path d="M92 58 C76 58,58 60,44 64 C34 68,26 70,18 72"/>
+                <path class="p2" d="M92 78 C78 78,60 74,44 70 C34 66,26 62,18 58"/>
+              </svg>
+
+              <div class="canvasBox">
+                <canvas id="radar" width="150" height="150"></canvas>
+
+                <svg class="orbits" viewBox="0 0 150 150" aria-hidden="true">
+                  <g class="r1">
+                    <circle cx="75" cy="75" r="54" stroke="rgba(245,245,255,.20)" stroke-width="1.2" fill="none" stroke-dasharray="2 10"/>
+                    <circle cx="75" cy="75" r="44" stroke="rgba(255,255,255,.14)" stroke-width="1" fill="none" stroke-dasharray="6 14"/>
+                  </g>
+                  <g class="r2"><circle cx="75" cy="75" r="34" stroke="rgba(184,107,255,.22)" stroke-width="1.2" fill="none" stroke-dasharray="3 12"/></g>
+                  <g class="r3"><circle cx="75" cy="75" r="24" stroke="rgba(138,45,255,.18)" stroke-width="1.1" fill="none" stroke-dasharray="2 9"/></g>
+                </svg>
+
+                <svg class="reticle" id="reticle" viewBox="0 0 150 150" aria-hidden="true">
+                  <circle cx="75" cy="75" r="60" stroke="rgba(255,255,255,.20)" stroke-width="1" fill="none" stroke-dasharray="8 10"/>
+                  <circle cx="75" cy="75" r="8" stroke="rgba(184,107,255,.45)" stroke-width="1.5" fill="none"/>
+                  <path d="M75 14V34M75 116V136M14 75H34M116 75H136" stroke="rgba(245,245,255,.40)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M75 42V48M75 102V108M42 75H48M102 75H108" stroke="rgba(184,107,255,.32)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div>
+                <svg width="0" height="0" style="position:absolute">
+                  <defs>
+                    <linearGradient id="hxg" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="rgba(255,255,255,.55)"/>
+                      <stop offset=".55" stop-color="rgba(184,107,255,.80)"/>
+                      <stop offset="1" stop-color="rgba(138,45,255,.95)"/>
+                    </linearGradient>
+                    <filter id="hxglow">
+                      <feGaussianBlur stdDeviation="1.9" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+                </svg>
+
+                <div class="statGrid" id="statGrid">
+                  <div class="hexStat">
+                    <div class="hexHdr"><span>Durability</span><b class="num"><i id="g0">92</i><span id="v0">92</span></b></div>
+                    <div class="hexBody">
+                      <svg class="hexSvg" viewBox="0 0 64 64">
+                        <polygon class="hexBase" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexFill" id="hf0" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexGlow" id="hx0" points="32,6 52,18 52,46 32,58 12,46 12,18" stroke-dasharray="210" stroke-dashoffset="30"/>
+                        <line class="hexNeedle" id="hn0" x1="32" y1="32" x2="32" y2="14"/>
+                        <circle class="hexDot" cx="32" cy="32" r="2.6"/>
+                      </svg>
+                      <div class="hexMeta">
+                        <div><span>CAL</span> <b id="p0">92%</b></div>
+                        <div class="microBar"><div class="microFill" id="m0" style="width:92%"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hexStat">
+                    <div class="hexHdr"><span>Overpower</span><b class="num"><i id="g1">90</i><span id="v1">90</span></b></div>
+                    <div class="hexBody">
+                      <svg class="hexSvg" viewBox="0 0 64 64">
+                        <polygon class="hexBase" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexFill" id="hf1" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexGlow" id="hx1" points="32,6 52,18 52,46 32,58 12,46 12,18" stroke-dasharray="210" stroke-dashoffset="45"/>
+                        <line class="hexNeedle" id="hn1" x1="32" y1="32" x2="32" y2="14"/>
+                        <circle class="hexDot" cx="32" cy="32" r="2.6"/>
+                      </svg>
+                      <div class="hexMeta">
+                        <div><span>CAL</span> <b id="p1">90%</b></div>
+                        <div class="microBar"><div class="microFill" id="m1" style="width:90%"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hexStat">
+                    <div class="hexHdr"><span>Speed</span><b class="num"><i id="g2">88</i><span id="v2">88</span></b></div>
+                    <div class="hexBody">
+                      <svg class="hexSvg" viewBox="0 0 64 64">
+                        <polygon class="hexBase" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexFill" id="hf2" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexGlow" id="hx2" points="32,6 52,18 52,46 32,58 12,46 12,18" stroke-dasharray="210" stroke-dashoffset="40"/>
+                        <line class="hexNeedle" id="hn2" x1="32" y1="32" x2="32" y2="14"/>
+                        <circle class="hexDot" cx="32" cy="32" r="2.6"/>
+                      </svg>
+                      <div class="hexMeta">
+                        <div><span>CAL</span> <b id="p2">88%</b></div>
+                        <div class="microBar"><div class="microFill" id="m2" style="width:88%"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hexStat">
+                    <div class="hexHdr"><span>Predation</span><b class="num"><i id="g3">85</i><span id="v3">85</span></b></div>
+                    <div class="hexBody">
+                      <svg class="hexSvg" viewBox="0 0 64 64">
+                        <polygon class="hexBase" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexFill" id="hf3" points="32,6 52,18 52,46 32,58 12,46 12,18"/>
+                        <polygon class="hexGlow" id="hx3" points="32,6 52,18 52,46 32,58 12,46 12,18" stroke-dasharray="210" stroke-dashoffset="58"/>
+                        <line class="hexNeedle" id="hn3" x1="32" y1="32" x2="32" y2="14"/>
+                        <circle class="hexDot" cx="32" cy="32" r="2.6"/>
+                      </svg>
+                      <div class="hexMeta">
+                        <div><span>CAL</span> <b id="p3">85%</b></div>
+                        <div class="microBar"><div class="microFill" id="m3" style="width:85%"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trustRow"><span><em>FEAR VALUE</em></span><b id="trust">8742</b></div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="idBoard">
+          <div class="ibHead"><h3>ID</h3><div class="sig">CLEARANCE: BLACK</div></div>
+          <div class="ibBody">
+            <div class="ibRow">
+              <div class="ibCell"><div class="k">State</div><div class="v">Dragon Form • Peak Trigger</div></div>
+              <div class="ibCell"><div class="k">Trigger</div><div class="v">Severe beating / threshold breach</div></div>
+            </div>
+            <div class="ibRow">
+              <div class="ibCell"><div class="k">Skin</div><div class="v">Pitch black</div></div>
+              <div class="ibCell"><div class="k">Tattoos</div><div class="v">White • Purple luminescence</div></div>
+            </div>
+            <div class="ibRow ibRowFull">
+              <div class="ibCell"><div class="k">Ability</div>
+                <div class="v"><b>Pain Induced Strength</b> • power increases by factor of two with sustained damage</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+<audio id="loopAudio" src="https://pomf2.lain.la/f/i4xc9d.mp3" autoplay loop hidden></audio>
+<script defer src="./dragan.js?v=1"></script>
+</body></html>
