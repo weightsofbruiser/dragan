@@ -537,3 +537,19 @@ breathe();
     dnaSeqLine.innerHTML = seq.map(() => rollBase()).join(" ");
   }, 160);
 })();
+
+(() => {
+  const a = document.getElementById("loopAudio");
+  if (!a) return;
+
+  a.volume = 0.7;
+
+  const start = async () => {
+    try { await a.play(); } catch (e) {}
+    window.removeEventListener("pointerdown", start);
+    window.removeEventListener("keydown", start);
+  };
+
+  window.addEventListener("pointerdown", start, { once: true });
+  window.addEventListener("keydown", start, { once: true });
+})();
